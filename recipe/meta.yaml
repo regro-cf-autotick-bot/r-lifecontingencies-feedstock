@@ -1,4 +1,4 @@
-{% set version = "1.3.10" %}
+{% set version = "1.4.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,12 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lifecontingencies_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lifecontingencies/lifecontingencies_{{ version }}.tar.gz
-  sha256: aa7a7431c724f569fc63a36783914cd9d9366b07393d8a7a110c5781f15873da
-  patches:
-    - patches/0001-expand-r-versions.patch
+  sha256: ee688f3ae532773eff9eea76b8af31aae7ba74191a5d61b9148f380e99d97077
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
